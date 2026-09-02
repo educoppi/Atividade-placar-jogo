@@ -50,6 +50,11 @@ export default function App() {
   }
 
   function desfazJogada(){
+
+    if (pontosA + pontosB == 0) {
+      return;
+    }
+
     setHistorico(prev => prev.slice(0, -1));
 
     if(timeAnterior) {
